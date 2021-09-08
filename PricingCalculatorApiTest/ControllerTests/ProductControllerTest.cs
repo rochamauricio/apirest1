@@ -55,8 +55,8 @@ namespace PricingCalculatorApiTest.ControllerTests
       category = "brinquedos";
       cost = 100f;
       expected = 125f;
-      result = _productController.GetPrice(category, cost).Result as OkObjectResult;
-      actual = Assert.IsType<float>(result.Value);
+      var result = _productController.GetPrice(category, cost).Result as OkObjectResult;
+      var actual = Assert.IsType<float>(result.Value);
       Assert.Equal(expected, actual);
 
       category = "bebidas";
