@@ -79,11 +79,6 @@ namespace PricingCalculatorApiTest.ModelTests
       float expected;
       float actual;
 
-      category = "";
-      expected = 0f;
-      actual = _productService.GetProfit(category);
-      Assert.Equal(expected, actual);
-
       category = "brinquedos";
       expected = 25f;
       actual = _productService.GetProfit(category);
