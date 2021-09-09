@@ -4,7 +4,6 @@ using PricingCalculatorApi.Controllers;
 using PricingCalculatorApi.Models;
 using System.Collections.Generic;
 using Xunit;
-using System;
 
 namespace PricingCalculatorApiTest.ControllerTests
 {
